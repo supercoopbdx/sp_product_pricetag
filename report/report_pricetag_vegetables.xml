@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="minimal_layout_vegetables" inherit_id="report.minimal_layout">
+        <xpath expr="//head" position="inside">
+            <link rel='stylesheet' href="/sp_product_pricetag/static/src/css/sp_pricetag_vegetables.css"/>
+        </xpath>
+    </template>
+    <template id="report_pricetag_vegetables">
+        <t t-call="report.html_container">
+            <div class="page">
+                <t t-foreach="Products" t-as="product">
+                    <t t-foreach="product['line'].quantity" t-as="q">
+                        <div class="label_container_vege">
+                            <div class="pricetag_vege">
+                                <div class="label_top_vege label_border_vege">
+                                    <div class="product_name_vege">
+                                        <t t-esc="product['product'].name"/>
+                                    </div>
+                                </div>
+                                <div class="label_top_vege label_border_vege">
+                                    <div class="product_price_vege">
+                                        <t t-esc="'%0.2f' % (product['product'].list_price)"/>€
+                                    </div>
+                                    <div class="product_price_uom_vege">
+                                        /<t t-esc="product['product'].uom_id.name"/>
+                                    </div>
+                                </div>
+                                <div class="label_middle_vege label_border_vege">
+                                    <img t-if="product['product'].image_medium" t-att-src="'data:image/jpg;base64,%s' % (product['product'].image_medium,)" class="product_image" />
+                                    <!-- <span t-field="product['product'].image_small" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-rounded&quot;}"/> -->
+                                    </div>
+                                <div class="label_middle_vege label_border_vege">
+                                    <div class="product_informations_vege">
+                                        <div class="product_informations">
+                                            Référence interne : <t t-if="product['product'].default_code" t-esc="product['product'].default_code" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label_bottom_vege label_border_vege">
+                                    <span>Origine : </span>
+                                </div>
+                                <div class="label_bottom_vege label_border_vege">
+                                    <span>Producteur : </span>
+                                </div>
+                                <div class="label_footer_vege label_border_vege">
+                                    <span class="product_label_grey">Label</span>
+                                </div>
+                                <div class="label_footer_vege label_border_vege">
+                                    <span class="product_label_grey">Label</span>
+                                </div>
+                                <div class="label_footer_vege label_border_vege">
+                                    <span class="product_label_grey">Label</span>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>
