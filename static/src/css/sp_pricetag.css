@@ -1,21 +1,26 @@
 .page_pricetag{
     padding: 0px;
-    margin: 58mm;
+    margin-top: 0cm;
+    margin-left: 0mm;
+    margin-right: 0mm;
     border: 0px;
     overflow: hidden;
 }
 .body_pricetag{
     padding: 0px;
-    margin: 50mm;
+    margin-top: 1cm;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
     border: 0px;
     overflow: hidden;
 }
 .label_container{
     page-break-inside: avoid;
-    width: 6.4cm;
-    height: 3.75cm;
+    width: 6.28cm;
+    height: 3.72cm;
     float: left;
-    margin: 0cm;
+    margin: 0 0.12cm;
     padding: 0cm 0.1cm;
 }
 .label_border{
