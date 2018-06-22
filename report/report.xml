@@ -17,6 +17,21 @@
     </record>
 
     <report
+        id="pricetag_no_price"
+        model="report.pricetag_no_price"
+        string="Pricetags without price"
+        report_type="qweb-pdf"
+        name="sp_product_pricetag.report_pricetag_no_price"
+        file="sp_product_pricetag.report_pricetag_no_price"
+        attachment_use="False"
+    />
+
+    <record id="sp_product_pricetag.pricetag_no_price" model="ir.actions.report.xml">
+        <field name="paperformat_id" ref="sp_product_pricetag.paperformat_pricetag"/>
+        <field name="attachment_use" eval="0"/>
+    </record>
+
+    <report
         id="pricetag_vegetables"
         model="report.pricetag_vegetables"
         string="Vegetable Pricetags"

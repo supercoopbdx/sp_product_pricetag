@@ -21,7 +21,7 @@
 
 {
     'name': 'Supercoop - Pricetags',
-    'version': '9.0.0.0.2',
+    'version': '9.0.0.0.3',
     'category': 'Custom',
     'author': "FJG - Supercoop",
     'website': 'https://www.supercoop.fr',
@@ -37,6 +37,7 @@
         'data/pricetag_model.xml',
         'report/report.xml',
         'report/report_pricetag.xml',
+        'report/report_pricetag_no_price.xml',
         'report/report_pricetag_vegetables.xml'
     ],
     'css': [
