@@ -17,8 +17,8 @@
 }
 .label_container{
     page-break-inside: avoid;
-    width: 6.28cm;
-    height: 3.72cm;
+    width: 6.31cm;
+    height: 3.37cm;
     float: left;
     margin: 0 0.12cm;
     padding: 0cm 0.1cm;
@@ -74,6 +74,7 @@
 }
 .product_barcode{
     text-align: center;
+    padding-bottom: 5px;
 }
 .barcode_image{
     padding-left: 20px;
