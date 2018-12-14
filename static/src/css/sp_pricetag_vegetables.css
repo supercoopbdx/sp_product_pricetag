@@ -13,7 +13,7 @@
 .label_container_vege{
     page-break-inside: avoid;
     width: 50%;
-    height: 22.5cm;
+    height: 8cm;
     float: left;
     margin: 0;
     padding: 0;
@@ -27,66 +27,62 @@
     padding: 0 0.4cm;
 }
 .label_top_vege{
-    width: 50%;
-    height: 20%;
+    width: 100%;
+    height: 30%;
     float: left;
     padding: 0.1cm;
 }
 .label_middle_vege{
-    width: 50%;
-    height: 30%;
-    float:left;
-    padding: 0.1cm;
-}
-.label_bottom_vege{
-    width: 50%;
-    height: 30%;
+    width: 100%;
+    height: 50%;
     float: left;
     padding: 0.1cm;
 }
-.label_footer_vege{
-    width: 33.33%;
-    width: calc(100% / 3);
+.label_middle_left{
+    width: 60%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+.label_middle_right{
+    width: 40%;
+    height: 100%;
+    float: right;
+    margin: 0;
+}
+.label_bottom_vege{
+    width: 100%;
     height: 20%;
     float: left;
     padding: 0.1cm;
 }
 
+.product_code_vege{
+    height: 100%;
+    width: 20%;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
 .product_name_vege{
     height: 100%;
-    width: 100%;
-    font-size: 33px;
+    width: 80%;
+    float: left;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 34px;
-    overflow: hidden;
-    padding-top: 1cm;
+    word-wrap: break-word;
 }
 .product_informations_vege{
     background-color: rgba(255, 255, 255, 1);
     width: 100%;
     height: 100%;
-    font-size: 20px;
+    font-size: 16px;
 }
 .product_image{
     height: 100%;
     width: 100%;
-}
-.product_code{
-    font-size: 55px;
-    font-weight:bold;
-    overflow: hidden;
-}
-.product_origin{
-    font-size: 44px;
-    font-weight:bold;
-    width:100%;
-    height: 37%
-}
-
-.pricetag_otherinfo{
-    overflow: hidden;
-    width: 100%;
-    height: 63%;
 }
 
 .product_price_vege{
@@ -107,4 +103,42 @@
 }
 .product_label_grey{
     opacity: 0.7;
+}
+.product_barcode{
+    padding-top: 10px;
+    height: 70%;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+.barcode_image{
+    margin: 0 auto;
+    padding: 0;
+    width: 100% !important;
+    height: 80% !important;
+}
+
+.border_red {
+    /*border: 1px solid red;*/
+}
+.border_green {
+    /*border: 1px solid green;*/
+}
+.border_blue {
+    /*border: 1px solid blue;*/
+}
+.border_black {
+    /*border: 1px solid black;*/
+}
+.border_yellow {
+    /*border: 1px solid yellow;*/
+}
+.border_grey {
+    /*border: 1px solid grey;*/
+}
+.border_cyan {
+    /*border: 1px solid cyan;*/
+}
+.border_magenta {
+    /*border: 1px solid magenta;*/
 }
