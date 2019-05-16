@@ -40,6 +40,9 @@
                                 </div>
                             </div>
                             <div class="label_bottom_vege border_grey">
+                                <div class="barcode_date">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d-%m-%Y %H:%M')"/>
+                                </div>
                                 <div class="product_barcode border_yellow">
                                     <img t-if="product['product'].barcode" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('EAN13', product['product'].barcode, 600, 600)" class='barcode_image' style='margin: 0 auto; padding: 0;'/>
                                     <t t-if="product['product'].barcode">
