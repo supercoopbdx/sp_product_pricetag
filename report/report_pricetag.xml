@@ -45,7 +45,7 @@
                                 <t t-if="product['product'].pricetag_rackinfos"><t t-esc="product['product'].pricetag_rackinfos"/></t>&#160;&#160; -->
                                 <!-- <t t-if="product['product'].barcode"><t t-esc="product['product'].barcode"/></t> -->
                             <!-- </div> -->
-                            <div class="pricetag_shelf_coopinfos">
+                            <div class="pricetag_shelf_coopinfos" style="margin: 0 auto; padding-top: 5px;">
                                 <t t-if="product['product'].pricetag_coopinfos"><t t-esc="product['product'].pricetag_coopinfos"/> </t>
                             </div>
                         </div>
