@@ -21,7 +21,7 @@
 
 {
     'name': 'Supercoop - Pricetags',
-    'version': '9.0.0.0.7',
+    'version': '9.0.0.0.8',
     'category': 'Custom',
     'author': "FJG - Supercoop",
     'website': 'https://www.supercoop.fr',
