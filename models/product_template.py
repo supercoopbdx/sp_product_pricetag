@@ -19,3 +19,6 @@ class ProductTemplate(models.Model):
                 lbls = lbl.name + (', ' + lbls if lbls else '')
             tmp = lbls + (' - ' + tmp if tmp else '')
             pt.pricetag_coopinfos = tmp
+
+    pricetag_coopinfos = fields.Char(
+        compute=_compute_pricetag_coopinfos, string='Coop custom fields')
